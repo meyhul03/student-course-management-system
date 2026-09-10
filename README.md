@@ -142,3 +142,89 @@ student-course-management-system/
     ├── Screenshot 2026-09-10 225051.png
     ├── Screenshot 2026-09-10 225348.png
     └── Screenshot 2026-09-10 225353.png
+
+## ⚙️ **Requirements**
+
+Before running the project, make sure the following are installed:
+
+- Java JDK 17 or later
+- Git
+
+### Check Java Installation
+
+```bash
+java -version
+javac -version
+
+📊 Project Documentation
+
+The repository contains the following documentation resources:
+
+System Architecture Diagram
+Workflow Diagram
+Use Case Diagram
+Class Diagram
+Sequence Diagram
+Storage / ER Diagram
+Testing Documentation
+Application Screenshots
+
+These documents describe the system architecture, workflow, object relationships, data storage model, and testing process.
+
+🎯 Project Objectives
+
+The main objectives of the project are:
+
+Provide a simple academic record management system.
+Reduce manual handling of student and course information.
+Manage enrollments and grades in an organized manner.
+Demonstrate practical Java programming concepts.
+Provide persistent local storage using CSV files.
+Provide a simple command-line interface for academic management.
+
+📌 Functional Modules
+1. Student Management
+Manages student records including adding, viewing, updating, and deleting student information.
+
+2. Course Management
+Manages course records including adding, viewing, updating, and deleting courses.
+
+3. Enrollment Management
+Manages student enrollment in courses and prevents duplicate student-course enrollment.
+
+4. Grade Management
+Accepts marks and automatically determines the corresponding letter grade and pass/fail status.
+
+5. Report and Data Management
+Generates student academic reports and manages CSV storage and backup operations.
+
+🔐 Non-Functional Requirements
+
+Performance
+The application should respond quickly for normal student, course, and enrollment operations.
+
+Reliability
+Stored records should remain available after restarting the application.
+
+Usability
+The menu-driven interface provides clear options, prompts, and result messages.
+
+Maintainability
+The system is divided into separate classes for data models, management operations, storage, and testing.
+
+Error Handling
+Invalid inputs and common application errors are handled without unexpectedly terminating the application.
+
+🔮 Future Enhancements
+    Possible future improvements include:
+    Graphical User Interface
+    Database integration using JDBC
+    User authentication
+    Role-based access control
+    Advanced search and filtering
+    PDF report generation
+    Academic performance analytics
+
+👤 Author
+Meyhul03
+Programming in Java
