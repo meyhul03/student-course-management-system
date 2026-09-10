@@ -1,254 +1,608 @@
-# \# Student Course Management System
+\# 📚 Student Course Management System
 
-# 
 
-# \## 1. Project Overview
 
-# 
+!\[Java](https://img.shields.io/badge/Java-25-orange?style=flat-square\&logo=openjdk)
 
-# The Student Course Management System is a command-line Java application developed to manage student records, courses, enrollments, grades, and academic reports.
+!\[CLI](https://img.shields.io/badge/Interface-Command%20Line-blue?style=flat-square)
 
-# 
+!\[Storage](https://img.shields.io/badge/Storage-CSV-green?style=flat-square)
 
-# The system provides a simple and organized way to perform common academic management operations through a terminal-based interface.
+!\[Git](https://img.shields.io/badge/Version%20Control-Git-black?style=flat-square)
 
-# 
 
-# \## 2. Objectives
 
-# 
+A command-line based Java application designed to manage students, courses, enrollments, grades, and academic records.
 
-# The main objectives of the project are:
 
-# 
 
-# \- Manage student information
+The system provides a menu-driven interface that allows an administrator or academic staff member to maintain academic information, assign grades, generate student reports, store records in CSV files, and create data backups.
 
-# \- Manage course information
 
-# \- Enroll students in courses
 
-# \- Assign and calculate grades
+\---
 
-# \- Generate student academic reports
 
-# \- Store data using CSV files
 
-# \- Create backups of application data
+\## 🚀 Features
 
-# \- Demonstrate core Java programming concepts
 
-# 
 
-# \## 3. Main Features
+\### 👨‍🎓 Student Management
 
-# 
 
-# \### Student Management
 
-# 
+\- Add new student records
 
-# &#x20;   - Add a student
+\- View all registered students
 
-# &#x20;   - View all students
+\- Update student information
 
-# &#x20;   - Search for a student
+\- Delete student records
 
-# &#x20;   - Update student details
+\- Prevent duplicate student IDs
 
-# &#x20;   - Delete a student
 
-# 
 
-# \### Course Management
+\### 📘 Course Management
 
-# 
 
-# &#x20;   - Add a course
 
-# &#x20;   - View all courses
+\- Add new courses
 
-# &#x20;   - Search for a course
+\- View available courses
 
-# &#x20;   - Update course details
+\- Update course information
 
-# &#x20;   - Delete a course
+\- Delete course records
 
-# 
+\- Prevent duplicate course codes
 
-# \### Enrollment Management
 
-# 
 
-# &#x20;   - Enroll a student in a course
+\### 📝 Enrollment Management
 
-# &#x20;   - View all enrollments
 
-# &#x20;   - Remove an enrollment
 
-# &#x20;   - Prevent duplicate student-course enrollment
+\- Enroll students in courses
 
-# 
+\- View all enrollments
 
-# \### Grade Management
+\- Remove enrollments
 
-# 
+\- Prevent duplicate student-course enrollment
 
-# &#x20;   - Enter marks for an enrollment
+\- Validate student and course existence before enrollment
 
-# &#x20;   - Automatically calculate letter grades
 
-# &#x20;   - Determine pass/fail status
 
-# 
+\### 📊 Grade Management
 
-# \### Report Management
 
-# 
 
-# &#x20;   - Generate student academic reports
+\- Enter marks for enrolled students
 
-# &#x20;   - Display enrolled courses
+\- Validate marks between 0 and 100
 
-# &#x20;   - Display assigned grades
+\- Automatically calculate letter grades
 
-# 
+\- Determine pass/fail status
 
-# \### Data Management
+\- Update the grade associated with an enrollment
 
-# 
 
-# &#x20;   - Save data in CSV files
 
-# &#x20;   - Load saved data when the application starts
+\### 📄 Academic Reports
 
-# &#x20;   - Create backup copies of stored data
 
-# 
 
-# \## 4. Technologies Used
+\- Generate student-specific academic reports
 
-# 
+\- Display student details
 
-# &#x20;   Language       : Java
+\- Display enrolled courses
 
-# &#x20;   Version        : Java 25
+\- Display semester information
 
-# &#x20;   Interface      : Command Line Interface (CLI)
+\- Display assigned grades
 
-# &#x20;   Storage        : CSV Files
 
-# &#x20;   Collections    : ArrayList
 
-# &#x20;   Build Tool     : javac
+\### 💾 Data Management
 
-# &#x20;   Version Control: Git and GitHub
 
-# 
 
-# \## 5. Java Concepts Demonstrated
+\- Store student records in CSV files
 
-# 
+\- Store course records in CSV files
 
-# The project demonstrates the following Java concepts:
+\- Store enrollment records in CSV files
 
-# 
+\- Automatically load saved data when the application starts
 
-# &#x20;   - Classes and Objects
+\- Create backup copies of stored data
 
-# &#x20;   - Encapsulation
 
-# &#x20;   - Constructors
 
-# &#x20;   - Methods
+\---
 
-# &#x20;   - Inheritance and Object-Oriented Design
 
-# &#x20;   - Collections Framework
 
-# &#x20;   - ArrayList
+\## 🛠️ Technologies Used
 
-# &#x20;   - Exception Handling
 
-# &#x20;   - File Handling
 
-# &#x20;   - Input Validation
+| Technology | Purpose |
 
-# &#x20;   - Packages
+|------------|---------|
 
-# &#x20;   - Modular Programming
+| Java 25 | Application development |
 
-# 
+| Java Collections | In-memory record management |
 
-# \## 6. Project Structure
+| Java File I/O | Data storage and backup |
 
-# 
+| CSV | Persistent data storage |
 
-# ```text
+| Command Line | User interface |
 
-# student-course-management-system/
+| Git | Version control |
 
-# │
+| GitHub | Repository hosting |
 
-# ├── README.md
 
-# ├── statement.md
 
-# ├── .gitignore
+\---
 
-# │
 
-# ├── src/
 
-# │   └── com/
+\## 🧠 Java Concepts Demonstrated
 
-# │       └── scms/
 
-# │           ├── Main.java
 
-# │           ├── Student.java
+\- Classes and Objects
 
-# │           ├── Course.java
+\- Encapsulation
 
-# │           ├── Enrollment.java
+\- Constructors
 
-# │           ├── Grade.java
+\- Methods
 
-# │           │
+\- Access Modifiers
 
-# │           ├── StudentManager.java
+\- Packages
 
-# │           ├── CourseManager.java
+\- ArrayList
 
-# │           ├── EnrollmentManager.java
+\- Exception Handling
 
-# │           │
+\- Input Validation
 
-# │           ├── FileManager.java
+\- File Handling
 
-# │           │
+\- Modular Programming
 
-# │           ├── StudentManagerTest.java
+\- Object-Oriented Programming
 
-# │           ├── CourseManagerTest.java
 
-# │           └── EnrollmentManagerTest.java
 
-# │
+\---
 
-# ├── data/
 
-# │   ├── students.csv
 
-# │   ├── courses.csv
+\## 📁 Project Structure
 
-# │   └── enrollments.csv
 
-# │
 
-# ├── diagrams/
+```text
 
-# │
+student-course-management-system/
 
-# └── bin/ords.
+│
+
+├── README.md
+
+├── statement.md
+
+├── TESTING.md
+
+├── .gitignore
+
+│
+
+├── src/
+
+│   └── com/
+
+│       └── scms/
+
+│           ├── Main.java
+
+│           ├── Student.java
+
+│           ├── Course.java
+
+│           ├── Enrollment.java
+
+│           ├── Grade.java
+
+│           ├── StudentManager.java
+
+│           ├── CourseManager.java
+
+│           ├── EnrollmentManager.java
+
+│           ├── FileManager.java
+
+│           ├── StudentManagerTest.java
+
+│           ├── CourseManagerTest.java
+
+│           └── EnrollmentManagerTest.java
+
+│
+
+├── data/
+
+│   ├── students.csv
+
+│   ├── courses.csv
+
+│   └── enrollments.csv
+
+│
+
+├── diagrams/
+
+│   ├── system-architecture.png
+
+│   ├── workflow-diagram.png
+
+│   ├── use-case-diagram.png
+
+│   ├── class-diagram.png
+
+│   ├── sequence-diagram.png
+
+│   └── storage-er-diagram.png
+
+│
+
+└── screenshots/
+
+&#x20;   ├── Screenshot 2026-09-10 225051.png
+
+&#x20;   ├── Screenshot 2026-09-10 225348.png
+
+&#x20;   └── Screenshot 2026-09-10 225353.png
+
+
+
+\## ⚙️ Requirements
+
+
+Before running the project, make sure the following are installed:
+
+
+
+Java JDK 17 or later
+
+Git
+
+
+
+Check the Java installation:
+
+
+
+java -version
+
+javac -version
+
+
+
+The project was developed and tested using Java 25.
+
+
+
+\## 📥 Installation
+
+
+1\. Clone the Repository
+
+git clone https://github.com/meyhul03/student-course-management-system.git
+
+2\. Open the Project Directory
+
+cd student-course-management-system
+
+3\. Compile the Project
+
+javac -d bin src\\com\\scms\\\*.java
+
+
+
+If compilation is successful, no error message will be displayed.
+
+
+
+\## ▶️ Running the Application
+
+
+Start the application using:
+
+
+
+java -cp bin com.scms.Main
+
+
+
+The main menu will be displayed:
+
+
+
+========================================
+
+&#x20;  STUDENT COURSE MANAGEMENT SYSTEM
+
+========================================
+
+
+
+\------------- MAIN MENU -------------
+
+1\.  Add Student
+
+2\.  View Students
+
+3\.  Update Student
+
+4\.  Delete Student
+
+5\.  Add Course
+
+6\.  View Courses
+
+7\.  Update Course
+
+8\.  Delete Course
+
+9\.  Enroll Student
+
+10\. View Enrollments
+
+11\. Remove Enrollment
+
+12\. Add Grade
+
+13\. Generate Student Report
+
+14\. Create Backup
+
+15\. Exit
+
+\-------------------------------------
+
+Enter your choice:
+
+
+🔄 Typical Workflow
+
+
+Add Student
+
+&#x20;     │
+
+&#x20;     ▼
+
+Add Course
+
+&#x20;     │
+
+&#x20;     ▼
+
+Enroll Student
+
+&#x20;     │
+
+&#x20;     ▼
+
+Assign Grade
+
+&#x20;     │
+
+&#x20;     ▼
+
+Generate Report
+
+&#x20;     │
+
+&#x20;     ▼
+
+Save Data
+
+&#x20;     │
+
+&#x20;     ▼
+
+Create Backup
+
+🧪 Testing
+
+
+
+The project contains separate test programs for the major management modules.
+
+
+
+Student Management Test
+
+javac -d bin src\\com\\scms\\\*.java
+
+java -cp bin com.scms.StudentManagerTest
+
+Course Management Test
+
+java -cp bin com.scms.CourseManagerTest
+
+Enrollment Management Test
+
+java -cp bin com.scms.EnrollmentManagerTest
+
+
+
+Additional testing information is available in:
+
+
+
+TESTING.md
+
+
+
+💾 Data Storage
+
+
+
+The application uses CSV files for local data persistence.
+
+
+
+Student Data
+
+data/students.csv
+
+Course Data
+
+data/courses.csv
+
+Enrollment Data
+
+data/enrollments.csv
+
+Backup
+
+
+
+Backup files are stored in:
+
+
+
+data/backup/
+
+
+
+Data is loaded when the application starts and saved when changes are made or when the application exits.
+
+
+
+⚠️ Validation and Error Handling
+
+
+
+The application handles common errors such as:
+
+
+
+Invalid numeric input
+
+Invalid marks
+
+Duplicate student IDs
+
+Duplicate course codes
+
+Duplicate enrollments
+
+Non-existent students
+
+Non-existent courses
+
+Non-existent enrollments
+
+File input/output errors
+
+
+
+Marks are accepted only within the range:
+
+
+
+0 - 100
+
+
+
+📊 Project Documentation
+
+
+
+The repository includes:
+
+
+
+System Architecture Diagram
+
+Workflow Diagram
+
+Use Case Diagram
+
+Class Diagram
+
+Sequence Diagram
+
+Storage / ER Diagram
+
+
+
+These diagrams describe the structure, workflow, object relationships, and data storage model of the system.
+
+
+
+🎯 Project Objectives
+
+
+
+The project aims to:
+
+
+
+Provide a simple academic record management system.
+
+Reduce manual handling of student and course information.
+
+Maintain enrollment and grade information in an organized manner.
+
+Demonstrate practical application of Java programming concepts.
+
+Provide local data persistence using CSV files.
+
+
+🔮 Future Enhancements
+
+
+
+Possible future improvements include:
+
+
+
+Graphical User Interface
+
+Database integration using JDBC
+
+User authentication
+
+Role-based access control
+
+Advanced search and filtering
+
+PDF report generation
+
+Academic performance analytics
+
+
+
+👤 Author
+
+Meyhul03
+
+Programming in Java
 
