@@ -143,88 +143,153 @@ student-course-management-system/
     ├── Screenshot 2026-09-10 225348.png
     └── Screenshot 2026-09-10 225353.png
 
+
+
+
+---
+
 ## ⚙️ **Requirements**
 
 Before running the project, make sure the following are installed:
 
-- Java JDK 17 or later
-- Git
+- **Java JDK 17 or later**
+- **Git**
 
 ### Check Java Installation
 
 ```bash
 java -version
 javac -version
+```
 
-📊 Project Documentation
+If both commands print a version number, you're ready to proceed.
+
+---
+
+## ▶️ **Setup & Run**
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/meyhul03/student-course-management-system.git
+cd student-course-management-system
+```
+
+### 2. Compile the source files
+
+**On Windows (cmd/PowerShell):**
+```bash
+javac -d bin src\com\scms\*.java
+```
+
+**On macOS/Linux:**
+```bash
+javac -d bin src/com/scms/*.java
+```
+
+### 3. Run the application
+
+```bash
+java -cp bin com.scms.Main
+```
+
+This launches the menu-driven command-line interface with options such as Add Student, View Students, Add Course, Enroll Student, Add Grade, Generate Student Report, and Create Backup.
+
+### 4. Using the application
+
+- Enter the number for the menu option you want, then press Enter.
+- Follow the on-screen prompts.
+- Data is automatically saved to CSV files in `data/` after each operation.
+- Select Create Backup at any time to back up your data.
+- Select Exit to close the application.
+
+### 5. Configuration
+
+No additional configuration is required. The `data/` directory is created automatically on first run if it doesn't already exist.
+
+---
+
+## 🧪 **Testing**
+
+```bash
+javac -d bin src\com\scms\*.java
+java -cp bin com.scms.StudentManagerTest
+java -cp bin com.scms.CourseManagerTest
+java -cp bin com.scms.EnrollmentManagerTest
+```
+
+(Use forward slashes on macOS/Linux.) See **TESTING.md** for full test details.
+
+---
+
+## 📊 **Project Documentation**
 
 The repository contains the following documentation resources:
 
-System Architecture Diagram
-Workflow Diagram
-Use Case Diagram
-Class Diagram
-Sequence Diagram
-Storage / ER Diagram
-Testing Documentation
-Application Screenshots
+- System Architecture Diagram
+- Workflow Diagram
+- Use Case Diagram
+- Class Diagram
+- Sequence Diagram
+- Storage / ER Diagram
+- Testing Documentation (`TESTING.md`)
+- Application Screenshots
 
-These documents describe the system architecture, workflow, object relationships, data storage model, and testing process.
+---
 
-🎯 Project Objectives
+## 🎯 **Project Objectives**
 
-The main objectives of the project are:
+- Provide a simple academic record management system.
+- Reduce manual handling of student and course information.
+- Manage enrollments and grades in an organized manner.
+- Demonstrate practical Java programming concepts.
+- Provide persistent local storage using CSV files.
+- Provide a simple command-line interface for academic management.
 
-Provide a simple academic record management system.
-Reduce manual handling of student and course information.
-Manage enrollments and grades in an organized manner.
-Demonstrate practical Java programming concepts.
-Provide persistent local storage using CSV files.
-Provide a simple command-line interface for academic management.
+---
 
-📌 Functional Modules
-1. Student Management
-Manages student records including adding, viewing, updating, and deleting student information.
+## 📌 **Functional Modules**
 
-2. Course Management
-Manages course records including adding, viewing, updating, and deleting courses.
+**1. Student Management** — Add, view, update, delete student records.
 
-3. Enrollment Management
-Manages student enrollment in courses and prevents duplicate student-course enrollment.
+**2. Course Management** — Add, view, update, delete course records.
 
-4. Grade Management
-Accepts marks and automatically determines the corresponding letter grade and pass/fail status.
+**3. Enrollment Management** — Manage student enrollment and prevent duplicates.
 
-5. Report and Data Management
-Generates student academic reports and manages CSV storage and backup operations.
+**4. Grade Management** — Accept marks, calculate letter grade and pass/fail status.
 
-🔐 Non-Functional Requirements
+**5. Report and Data Management** — Generate reports, manage CSV storage and backups.
 
-Performance
-The application should respond quickly for normal student, course, and enrollment operations.
+---
 
-Reliability
-Stored records should remain available after restarting the application.
+## 🔐 **Non-Functional Requirements**
 
-Usability
-The menu-driven interface provides clear options, prompts, and result messages.
+**Performance** — Should respond quickly for normal student, course, and enrollment operations.
 
-Maintainability
-The system is divided into separate classes for data models, management operations, storage, and testing.
+**Reliability** — Stored records remain available after restarting the application.
 
-Error Handling
-Invalid inputs and common application errors are handled without unexpectedly terminating the application.
+**Usability** — Menu-driven interface with clear options, prompts, and result messages.
 
-🔮 Future Enhancements
-    Possible future improvements include:
-    Graphical User Interface
-    Database integration using JDBC
-    User authentication
-    Role-based access control
-    Advanced search and filtering
-    PDF report generation
-    Academic performance analytics
+**Maintainability** — Separated into model, manager, storage, and test classes.
 
-👤 Author
-Meyhul03
+**Error Handling** — Invalid inputs and errors handled without unexpected termination.
+
+---
+
+## 🔮 **Future Enhancements**
+
+- Graphical User Interface
+- Database integration using JDBC
+- User authentication
+- Role-based access control
+- Advanced search and filtering
+- PDF report generation
+- Academic performance analytics
+
+---
+
+## 👤 **Author**
+
+**Meyhul V Jaiswal**
+
 Programming in Java
